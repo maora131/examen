@@ -1,5 +1,5 @@
 #   Examen 2911
-Módulo: Programación web en el contorno del cliente.
+Módulo: Programación web en el contorno del cliente.<br>
 Todas las páginas contienen header y footer mediante javascript con sus respectivos selectores. <br>
 Página de Inicio que contiene dos imágenes, la del banner y la del fondo. Luego tiene difertentes párrafos "explicando" un briefing de la marca. <br>
 La página de Equipo está basada en un ejercicio anterior con pequeñas animaciones de movimiento/hovers en los diferentes botones e iconos sacados de font-awesome.<br>
