@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital@1&display=swap');
+/*font-family: 'Mali', cursive;*/
+/*Párrafos*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    flex: 1 0 auto;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; /*Cuidao que esto también cambia los enlaces*/
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    background-color: #F9DCDE;
+}
+article{
+	background-image: url(img/rositaa.jpg);
+	background-size: cover;
+}
+/*Imagen de la parte superior*/
+.hero-image {
+	top: -20rem;
+	bottom: -20rem;
+	width: 100%;
+	background-image: url(img/fondo.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	z-index: 1;
+}
+/*Texto encima de la imagen*/
+.hero h1 {
+	position: relative;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	padding-top: 15rem;
+	z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos por defecto */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: #222222;
+	line-height: 1.4; }
+h1 {
+	font-size: 2.75rem; }
+h2 {
+	font-size: 1.6875rem; }
+h3 {
+	font-size: 1.375rem; }
+h4 {
+	font-size: 1.125rem; }
+h5 {
+	font-size: 1.125rem; }
+h6 {
+	font-size: 1rem; }
+
+/* Elementos base*/
+
+p {
+	margin: 1rem 0;
+	line-height: 1.8;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.content {
+	max-width: 60rem;
+	margin: 0 auto;
+	width: 100%; }
+
+.hero {
+	position: relative;
+	overflow: hidden;
+	height: 30rem; }
+
+section { padding: 6rem 0 3rem; }
+
+

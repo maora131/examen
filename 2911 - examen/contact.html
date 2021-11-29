@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="estiloscontacto.css" rel="stylesheet" type="text/css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <title>Inicio</title>
+</head>
+<body>
+    <header-component></header-component>
+
+    <div class="container">  
+        <form id="contact" action="" method="post">
+        <h3>Formulario de contacto</h3>
+        <h4>Si tienes alguna consulta, deja tus datos:</h4>
+        <fieldset>
+            <label for="uname" required minlength="10">Nombre</label>
+            <input  type="text" tabindex="1" required autofocus> <!--tabindex es el orden en el que los elementos deben de ir al bajar con tab-->
+        </fieldset>
+        <fieldset>
+            <label for="email">Correo electrónico</label>
+            <input  type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <label for="phone">Tu número de teléfono</label>
+            <input  type="tel" pattern="[0-9]{9}" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+            <label for="web">Página web</label>
+            <input  type="url" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <label for="comment">Comentarios</label>
+            <textarea  tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+        </fieldset>
+        </form>
+        
+    </div>
+    
+
+    <footer-component></footer-component>
+</body>
+</html>

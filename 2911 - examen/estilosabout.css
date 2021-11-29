@@ -1,0 +1,182 @@
+/*FUENTES*/
+/*Títulos*/
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital@1&display=swap');
+/*font-family: 'Mali', cursive;*/
+/*Párrafos*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/rositaa.jpg);
+	background-size: cover;
+    background-color: #F9DCDE;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+header{
+    text-align: center;
+    margin-top: 30px;
+}
+header h1{
+    font-family: 'Mali', cursive;
+    font-size: 40pt;
+    text-shadow: 1px 1px 2px #000000;
+}
+header p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+/*CARD EQUIPO*/
+/*Imagen de fondo y se añadió la animación a posteriori*/
+
+.container{
+    height: 1000px;
+    padding-top: 8em;
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-left: 4.5em;
+}
+/*Fondo blanco del fondo en height cambio cuan largo es*/
+.cont2{
+    margin: auto;
+    width: 30%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.815);
+    height: fit-content;
+    border-radius: 1em;
+    margin-left: 2em;
+    transition: transform .5s;
+    padding-bottom: 2em;
+}
+/*ANIMACIÓN DE LOS CONTENEDORES BLANCOS ZOOM IN*/
+@keyframes cont2{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+/*Animación que hace que aparezca cada contenedor en x tiempo*/
+.cont2:nth-child(1){
+	animation: cont2 2s 3s backwards;
+}
+
+.cont2:nth-child(2){
+	animation: cont2 2s 3.5s backwards;
+}
+
+.cont2:nth-child(3){
+	animation: cont2 2s 4s backwards;
+}
+/*Aquí el contenedor blanco se agranda al clicar*/
+.cont2:hover{
+	transform: scale(1.1);
+}
+
+/*Imagen de Manuelas (las personas)*/
+.cont2 img{
+    display: block;
+    margin: auto;
+    padding-top: 2em;
+    border-radius: 100%;
+}
+
+.cont2 img:hover{
+    filter: opacity(80%);  
+}
+/*Texto de dentro*/
+.cont2 h1{
+    text-align: center;
+    font-family: 'Mali', cursive;
+    padding-top: 1em;
+}
+.cont2 p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2em;
+}
+.cont2 h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+/*ICONOS*/
+
+.iconos{
+    text-align: center;
+    width: 80%;
+    font-size: 30pt;
+    color: #551A8B;
+    margin: auto;
+    display: block;
+}
+
+.iconos a{
+    color: pink;
+}
+i{
+    padding: 0.5em;
+}
+i:hover{
+    color: #FDCC0E;
+}
+/*BOTÓN*/
+
+.boton{
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+    width: 35%;
+    background-color: pink;
+    display: block;
+    margin: auto;
+    border-radius: 1em;
+    color: white;
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.boton:hover{
+    background-color: #FDCC0E;
+}
+
+/*RESPONSIVE*/
+@media(max-width: 1500px) {
+    .cont2 img{
+        border-radius: 100%;
+        width: 90%;
+    }
+}
+@media(max-width: 1200px) {
+    .cont2{
+        display: block;
+        margin: auto;
+        margin-top: 2em;
+        width: 60%;
+    }
+    .cont2 img{
+        border-radius: 100%;
+        width: 90%;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .cont2{
+        width: 80%;
+    }
+
+    .cont2 img{
+        border-radius: 100%;
+        width: 60%;
+    }
+    .iconos{
+        font-size: 20pt;
+    }
+
+}
